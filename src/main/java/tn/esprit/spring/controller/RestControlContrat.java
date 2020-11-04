@@ -54,6 +54,7 @@ public class RestControlContrat {
 	 @ResponseBody
 	 public Contrat addContrat(@RequestBody Contrat c) {
 		 l.info("In  addContrat : " + c);
+		 l.debug("ajout de contrat");
 		 Contrat contrat = contratService.addContrat(c);
 		 l.info("Out of  addContrat. ");
 	 return contrat;
